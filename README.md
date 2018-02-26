@@ -4,6 +4,10 @@
 
 ```As a user
 So that I can list a space
+I want to register for an account.
+
+As a user
+So that I can list a space
 I want to sign in.
 
 As a user
@@ -12,7 +16,7 @@ I want to sign out.
 
 As a user,
 So that I can list a space
-I want to be able fill in space-listing form
+I want to be able fill in space-listing form. --MVP
 ```
 
 **Users can list multiple spaces.**
@@ -29,12 +33,14 @@ I want to be able to manage my spaces in a list
 
 ```As a user
 So I can give details about my spaces
-I want to be able to provide a name, description and a price for my spaces
+I want to be able to provide a name, description and a price for my spaces -- MVP (phase 2)
 ```
 
 **Users should be able to offer a range of dates where their space is available.**
 
-```Todo...
+```As a user
+So that I can efficiently rent out my space
+I would like to specify the available dates of my space-- MVP
 ```
 
 **Any signed-up user can request to hire any space for one night, and this should be approved by the user that owns that space.**
@@ -49,7 +55,7 @@ I want to specify the length of my stay.
 
 As a user,
 So that I can hire a space,
-I want to be able to make a rental request to an owner.
+I want to be able to make a rental request to an owner.--MVP
 
 As a user,
 So that I can secure my space,
@@ -69,7 +75,7 @@ I want to be able to approve an incoming booking request.
 ```
 As a user,
 So that I can secure my booking,
-I want to see that it is available to hire on my desired date.
+I want to see that it is available to hire on my desired date. -- included in above user story
 
 As a user,
 So that I can make a decision about a space to book,
