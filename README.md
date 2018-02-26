@@ -2,9 +2,10 @@
 
 **MVP**
 
-```As a host,
+```
+As a host,
 So that I can list a space,
-I want to be able fill in space-listing form.
+I want to be able fill in a space-listing form.
 
 As a host,
 So I can give details about my spaces,
