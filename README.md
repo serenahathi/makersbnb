@@ -9,6 +9,7 @@
 * PostgreSQL
 * We will choose between Sammy.js and Express.js
 * Travis CI or Hound
+* ESLint https://eslint.org/
 
 # User Stories
 
