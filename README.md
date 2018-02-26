@@ -6,11 +6,9 @@
 So that I can list a space,
 I want to be able fill in space-listing form.
 
-
 As a host,
 So I can give details about my spaces,
 I want to be able to provide a name, description and a price for my spaces -- MVP (phase 2).
-
 
 As a host,
 So that I can efficiently rent out my space,
@@ -42,7 +40,8 @@ I want to be able fill in space-listing form.
 
 **Hosts can list multiple spaces.**
 
-```As a host,
+```
+As a host,
 So I can list multiple spaces,
 I want to be able to save my spaces in a list.
 
