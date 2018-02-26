@@ -1,3 +1,13 @@
+
+# Working tech stack
+
+* Javascript 
+* Jquery
+* HTML and CSS
+* Jasmine
+* ORM (Sequelize)
+* PostgreSQL
+
 # User Stories
 
 **MVP**
