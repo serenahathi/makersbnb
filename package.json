@@ -1,0 +1,32 @@
+{
+  "name": "makersbnb",
+  "version": "1.0.0",
+  "description": "lolhost makersbnb",
+  "main": "y",
+  "dependencies": {
+    "eslint": "^4.18.1"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jasmine": "^2.9.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/telgi/makersbnb.git"
+  },
+  "keywords": [
+    "makersbnb",
+    "lolhost",
+    "cheapAccomodation"
+  ],
+  "author": "team lolhost",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/telgi/makersbnb/issues"
+  },
+  "homepage": "https://github.com/telgi/makersbnb#readme"
+}
