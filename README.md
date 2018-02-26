@@ -6,25 +6,25 @@ User Stories
 
 ```As a user,
 So that I can access MakersBnB,
-I want to be able to sign up
+I want to be able to sign up```
 
-As a user,
+```As a user,
 So that I can hire a space for one night,
-I want to specify the length of my stay
+I want to specify the length of my stay```
 
-As a user,
+```As a user,
 So that I can hire a space,
-I want to be able to make a rental request to an owner
+I want to be able to make a rental request to an owner```
 
-As a user,
+```As a user,
 So that I can secure my space,
-I want to receive a confirmation of my booking from the owner
+I want to receive a confirmation of my booking from the owner```
 
 As an owner,
 So that I can rent my space,
 I want to be able to view all incoming booking requests
 
-As an owner,
+```As an owner,
 So that I can rent my space,
 I want to be able to approve an incoming booking request```
 
