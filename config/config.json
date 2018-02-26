@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "terenceallitt",
+    "password": null,
+    "database": "lolhost_development",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "terenceallitt",
+    "password": null,
+    "database": "lolhost_test",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "terenceallitt",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres"
+  }
+}

@@ -9,14 +9,16 @@
     "express": "^4.16.2",
     "morgan": "^1.9.0",
     "pg": "^7.4.1",
-    "pg-hstore": "^2.3.2",
-    "sequelize": "^4.34.0"
+    "pg-hstore": "^2.3.2"
   },
   "devDependencies": {
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-jasmine": "^2.9.2",
-    "nodemon": "^1.15.1"
+    "jake": "^8.0.15",
+    "nodemon": "^1.15.1",
+    "sequelize": "^4.34.0",
+    "sequelize-cli": "^4.0.0"
   },
   "scripts": {
     "start:dev": "nodemon ./bin/www",
