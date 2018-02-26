@@ -7,6 +7,8 @@
 * Jasmine
 * ORM (Sequelize)
 * PostgreSQL
+* We will choose between Sammy.js and Express.js
+* Travis CI or Hound
 
 # User Stories
 
