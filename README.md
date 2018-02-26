@@ -1,23 +1,22 @@
 # User Stories
 
-** MVP **
+**MVP**
 
 ```As a host,
 So that I can list a space,
 I want to be able fill in space-listing form.
-```
 
-```As a host,
+
+As a host,
 So I can give details about my spaces,
 I want to be able to provide a name, description and a price for my spaces -- MVP (phase 2).
-```
 
-```As a host,
+
+As a host,
 So that I can efficiently rent out my space,
 I would like to specify the available dates of my space.
 
-
-```As a guest,
+As a guest,
 So that I can hire a space,
 I want to be able to make a rental request to a host.
 ```
