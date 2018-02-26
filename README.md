@@ -22,7 +22,8 @@ I want to be able to make a rental request to a host.
 
 **Any signed-up host can list a new space.**
 
-```As a host,
+```
+As a host,
 So that I can list a space,
 I want to register for an account.
 
@@ -53,21 +54,24 @@ I want to be able to manage my spaces in a list.
 
 **Hosts should be able to name their space, provide a short description of the space, and a price per night.**
 
-```As a host,
+```
+As a host,
 So I can give details about my spaces,
 I want to be able to provide a name, description and a price for my spaces.
 ```
 
 **Hosts should be able to offer a range of dates where their space is available.**
 
-```As a host,
+```
+As a host,
 So that I can efficiently rent out my space,
 I would like to specify the available dates of my space.
 ```
 
 **Any signed-up guest can request to hire any space for one night, and this should be approved by the host that owns that space.**
 
-```As a guest,
+```
+As a guest,
 So that I can access MakersBnB,
 I want to be able to sign up.
 
