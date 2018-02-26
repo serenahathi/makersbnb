@@ -1,6 +1,41 @@
+# User Stories
 
-User Stories
-------
+**Any signed-up user can list a new space.**
+
+```As a user
+So that I can list a space
+I want to sign in.
+
+As a user
+So that I can protect my property
+I want to sign out.
+
+As a user,
+So that I can list a space
+I want to be able fill in space-listing form
+```
+
+**Users can list multiple spaces.**
+```As a user
+So I can list multiple spaces
+I want to be able to save my spaces in a list
+
+As a user
+So I can manage my multiple spaces
+I want to be able to manage my spaces in a list
+```
+
+**Users should be able to name their space, provide a short description of the space, and a price per night.**
+
+```As a user
+So I can give details about my spaces
+I want to be able to provide a name, description and a price for my spaces
+```
+
+**Users should be able to offer a range of dates where their space is available.**
+
+```Todo...
+```
 
 **Any signed-up user can request to hire any space for one night, and this should be approved by the user that owns that space.**
 
@@ -38,7 +73,7 @@ I want to see that it is available to hire on my desired date.
 
 As a user,
 So that I can make a decision about a space to book,
-I only want to see spaces that are available. 
+I only want to see spaces that are available.
 
 As an owner,
 So that I can ensure efficient use of my space,
@@ -54,8 +89,7 @@ As an owner,
 So that I can book my space efficiently,
 I want my space to be listed as available until I accept a booking request.
 
-As a user, 
+As a user,
 So that I can continue to browse other spaces,
 I don’t want my booking to be confirmed until I make a booking request. (is this needed?).
 ```
-
