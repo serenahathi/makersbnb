@@ -4,7 +4,8 @@
 * Javascript 
 * Jquery
 * HTML and CSS
-* Jasmine
+* Jasmine 
+* Zombie.js
 * ORM (Sequelize)
 * PostgreSQL
 * We will choose between Sammy.js and Express.js
