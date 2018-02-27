@@ -1,3 +1,5 @@
+const models = require('./models/index');
+
 const express = require('express');
 const logger = require('morgan');
 const bodyParser = require('body-parser');
@@ -19,7 +21,18 @@ app.get('/properties/new', (req, res) => {
 });
 
 app.post('/properties', (req, res) => {
-  const property = req.body;
+  const params = req.body;
+  console.log(req.body.name),
+
+  models.Property.create({
+    name:         req.body.name,
+    description:  req.body.desc,
+    price:        req.body.price,
+    availablefrom: req.body.from,
+    availableuntil: req.body.until,
+  }).then((property) => {
+    res.json(property);
+  });
 
   res.redirect('/');
 });
