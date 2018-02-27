@@ -1,6 +1,6 @@
 {
   "development": {
-    "username": "josu",
+    "username": "test",
     "password": null,
     "database": "lolhost_development",
     "host": "127.0.0.1",
