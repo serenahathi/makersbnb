@@ -13,7 +13,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(`${__dirname}/views`));
 
 app.get('/', (req, res) => {
-  res.render('properties/index.ejs');
+  models.Property.findAll().then((properties) => {
+    res.render('properties/index.ejs', {
+      properties,
+    });
+  });
 });
 
 app.get('/properties/new', (req, res) => {
@@ -21,20 +25,17 @@ app.get('/properties/new', (req, res) => {
 });
 
 app.post('/properties', (req, res) => {
-  const params = req.body;
-  console.log(req.body.name),
+  const property = req.body;
 
   models.Property.create({
-    name: req.body.name,
-    description: req.body.desc,
-    price: req.body.price,
-    availablefrom: req.body.from,
-    availableuntil: req.body.until,
-  }).then((property) => {
-    res.json(property);
+    name: property.name,
+    description: property.desc,
+    price: property.price,
+    availablefrom: property.from,
+    availableuntil: property.until,
+  }).then(() => {
+    res.redirect('/');
   });
-
-  res.redirect('/');
 });
 
 module.exports = app;

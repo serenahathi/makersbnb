@@ -6,6 +6,21 @@
   </head>
   <body>
     <h1>List of all properties</h1>
+    <ul>
+      <% properties.forEach(function(property) { %>
+        <li>
+          <%= property.name %>
+          <li>Cost per night: £<%= property.price %>.00
+          <li>Property description: <%= property.description %></li>
+
+          </li>
+          <li>
+          Dates available: <%= property.availablefrom %> until
+          <%= property.availableuntil %>
+        </li>
+        <br><br>
+      <% }); %>
+    </ul>
 
     <form action="/properties/new">
       <input type="submit" value="List new property">
