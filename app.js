@@ -25,9 +25,9 @@ app.post('/properties', (req, res) => {
   console.log(req.body.name),
 
   models.Property.create({
-    name:         req.body.name,
-    description:  req.body.desc,
-    price:        req.body.price,
+    name: req.body.name,
+    description: req.body.desc,
+    price: req.body.price,
     availablefrom: req.body.from,
     availableuntil: req.body.until,
   }).then((property) => {
