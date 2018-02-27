@@ -1,6 +1,6 @@
 {
   "development": {
-    "username": "terenceallitt",
+    "username": "josu",
     "password": null,
     "database": "lolhost_development",
     "host": "127.0.0.1",
@@ -8,7 +8,7 @@
     "dialect": "postgres"
   },
   "test": {
-    "username": "terenceallitt",
+    "username": "josu",
     "password": null,
     "database": "lolhost_test",
     "host": "127.0.0.1",
@@ -16,7 +16,7 @@
     "dialect": "postgres"
   },
   "production": {
-    "username": "terenceallitt",
+    "username": "josu",
     "password": null,
     "database": "database_production",
     "host": "127.0.0.1",
