@@ -8,7 +8,6 @@ describe('Host', () => {
   });
 
   it('can post a property', () => {
-    host.post(property);
-    expect();
+    expect(host.post(property)).toEqual(property);
   });
 });
