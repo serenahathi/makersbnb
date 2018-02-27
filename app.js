@@ -10,24 +10,21 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(`${__dirname}/views`));
 
-// app.get('*', (req, res) => res.status(200).send({
-//   message: 'Welcome to the beginning of nothingness.',
-// }));
-
 app.get('/', (req, res) => {
-  res.render('./views/properties.html');
+  res.render('properties/index.ejs');
 });
 
 app.get('/properties/new', (req, res) => {
-  res.render('./views/form.html');
+  res.render('properties/new.ejs');
 });
 
 app.post('/properties', (req, res) => {
-  res.send(req.params);
-  // console.log(req.params);
+  const property = req.body;
+
   res.redirect('/');
 });
 
 module.exports = app;
 
 app.listen(8080);
+console.log('Lolhost server started');
