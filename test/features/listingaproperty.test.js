@@ -37,20 +37,22 @@ describe('Property form page', () => {
   });
 });
 
-describe('Properties are displayed', () => {
+describe('Properties are displayed after form is filled in', () => {
   before(() => {
-    browser.visit('/properties/new');
-    browser
-      .fill('name', 'My House')
-      .fill('desc', 'Cat Heaven!')
-      .fill('price', '2')
-      .fill('from', '1990-01-04')
-      .fill('until', '2018-01-04');
-    return browser.pressButton('List property');
+    browser.visit('/properties/new').then(function(){
+      browser
+        .fill('desc', 'Cat Heaven!')
+        .fill('name', 'My House')
+        .fill('price', '2')
+        .fill('from', '1990-01-04')
+        .fill('until', '2018-01-04')
+        .pressButton('List property');
+    });
   });
 
   it('should display properties', () => {
-    browser.wait();
+    console.log("Here;s our browser::::")
+    console.log(browser);
     browser.assert.text('My House');
   });
 });
