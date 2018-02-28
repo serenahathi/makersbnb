@@ -1,8 +1,4 @@
-// If we want to run without requiring, we type:
-// $ mocha test --require test/helpers/chai.js
-
-const chai = require('chai');
-const expect = require('chai').expect;
+require('./helpers/chai.js')
 
 it('should work', () => {
   expect('hi').to.equal('hi');

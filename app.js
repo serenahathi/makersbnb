@@ -26,7 +26,6 @@ app.get('/properties/new', (req, res) => {
 
 app.post('/properties', (req, res) => {
   const property = req.body;
-
   models.Property.create({
     name: property.name,
     description: property.desc,

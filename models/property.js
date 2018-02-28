@@ -1,4 +1,6 @@
-
+function Property(){
+  this.name = 'hello';
+};
 
 module.exports = (sequelize, DataTypes) => {
   const Property = sequelize.define('Property', {

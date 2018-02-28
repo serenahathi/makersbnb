@@ -1,14 +1,15 @@
 
 # Working tech stack
 
-* Javascript 
-* Jquery
-* HTML and CSS
-* Jasmine 
-* Zombie.js
-* ORM (Sequelize)
+* Javascript
+* jQuery
+* EJS and CSS
+* Mocha
+  * Sinon
+  * Zombie.js
+* Sequelize
 * PostgreSQL
-* We will choose between Sammy.js and Express.js
+* We will choose between and Express.js
 * Travis CI or Hound
 * ESLint https://eslint.org/
 
