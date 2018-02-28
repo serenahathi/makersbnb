@@ -36,3 +36,21 @@ describe('Property form page', () => {
       });
   });
 });
+
+describe('Properties are displayed', () => {
+  before(() => {
+    browser.visit('/properties/new');
+    browser
+      .fill('name', 'My House')
+      .fill('desc', 'Cat Heaven!')
+      .fill('price', '2')
+      .fill('from', '1990-01-04')
+      .fill('until', '2018-01-04');
+    return browser.pressButton('List property');
+  });
+
+  it('should display properties', () => {
+    browser.wait();
+    browser.assert.text('My House');
+  });
+});
