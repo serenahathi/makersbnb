@@ -1,15 +1,14 @@
-require('./helpers/chai.js')
-require('../models/property.js')
+require('./helpers/chai.js');
+require('../models/property.js');
 
-describe('Property', function(){
-
+describe('Property', () => {
   let property;
 
-  beforeEach(()=> {
+  beforeEach(() => {
     property = new Property();
   });
 
-  it('is initialized with a name', function(){
+  it('is initialized with a name', () => {
     expect(property.name).to.equal('Watery willows');
   });
 });

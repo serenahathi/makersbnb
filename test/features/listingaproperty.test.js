@@ -38,21 +38,20 @@ describe('Property form page', () => {
 });
 
 describe('Properties are displayed after form is filled in', () => {
-  before(() => {
-    browser.visit('/properties/new').then(function(){
+  before((done) => {
+    browser.visit('/properties/new').then(() => {
       browser
         .fill('desc', 'Cat Heaven!')
         .fill('name', 'My House')
         .fill('price', '2')
         .fill('from', '1990-01-04')
         .fill('until', '2018-01-04')
-        .pressButton('List property');
+        .pressButton('List property', done);
     });
   });
 
   it('should display properties', () => {
-    console.log("Here;s our browser::::")
-    console.log(browser);
-    browser.assert.text('My House');
+    // This is checking if all the content in the page is Cat Heaven!
+    browser.assert.text('body', 'Cat Heaven!');
   });
 });
