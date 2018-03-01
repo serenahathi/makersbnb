@@ -14,7 +14,8 @@ describe('it should request a property', () => {
   });
 
   it('it allows the user to request a property', () => {
-    browser.pressButton('#2');
-    expect(browser.html()).to.include('Thank you for requesting Lolhost mansions');
+    browser.pressButton('#2', () => {
+      expect(browser.html()).to.include('Thank you for requesting Lolhost mansions');
+    });
   });
 });
