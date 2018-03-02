@@ -36,11 +36,18 @@ app.post('/properties', (req, res) => {
   });
 });
 
-app.get('/properties/request', (req, res) => {
+app.get('/properties/request/new', (req, res) => {
   models.Property.findById(req.query.id).then((property) => {
-    res.render('properties/request.ejs', {
+    res.render('properties/new_request.ejs', {
       property,
     });
+  });
+});
+
+app.post('/properties/request', (req, res) => {
+  const request = req.body;
+  res.render('properties/request.ejs', {
+    request,
   });
 });
 
