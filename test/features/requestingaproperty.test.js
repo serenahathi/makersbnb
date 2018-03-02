@@ -8,13 +8,16 @@ Browser.localhost('example.com', 3000);
 
 const browser = new Browser();
 
+before((done) => {
+  browser.visit('/', done);
+});
+
 describe('it should request a property', () => {
   before((done) => {
-    browser.visit('/', done);
+    browser.pressButton('#property-2', done);
   });
 
   it('it allows the user to request a property', () => {
-    browser.pressButton('#property-2');
     expect(browser.html()).to.include('Thank you for requesting Lolhost mansions');
   });
 });

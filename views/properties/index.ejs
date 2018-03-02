@@ -19,7 +19,8 @@
           <%= property.availableuntil %>
         </li>
 
-        <form>
+        <form action="/properties/request">
+          <input type="hidden" name="id" value="<%=property.id%>">
           <button id="property-<%= property.id %>" type="submit">Request this property</button>
         </form>
 

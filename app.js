@@ -36,6 +36,14 @@ app.post('/properties', (req, res) => {
   });
 });
 
+app.get('/properties/request', (req, res) => {
+  models.Property.findById(req.query.id).then((property) => {
+    res.render('properties/request.ejs', {
+      property,
+    });
+  });
+});
+
 module.exports = app;
 
 app.listen(8080);
