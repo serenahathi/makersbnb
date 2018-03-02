@@ -24,26 +24,47 @@ describe('it should show the request page a property', () => {
 
 
 describe('request form page', () => {
-  before((done) => {
-    browser.visit('/properties/request/new?id=2');
-    browser
-      .fill('from', '2018-01-01')
-      .fill('until', '2018-02-01')
-      .pressButton('Submit request', done)
-      .then(() => {
-        assert.ok(browser.success);
-      });
+  //
+  // it('allows a user to fill in a request form', () => {
+  //   browser.visit('/properties/request/new?id=2');
+  //   browser
+  //     .fill('from', '2018-01-01')
+  //     .fill('until', '2018-02-01')
+  //     .pressButton('Submit request')
+  //     .then(() => {
+  //       assert.ok(browser.success);
+  //     });
+  // });
+  //
+  // before((done) => {
+  //
+  //
+  // });
+
+  it('allows a user to fill in a request form', (next) => {
+    browser.visit('/properties/request/new?id=2', () => {
+      browser
+        .fill('from', '2018-01-01')
+        .fill('until', '2018-02-01')
+        .pressButton('Submit request')
+        .then(() => {
+          expect(browser.html()).to.include('Booking request for Lolhost mansions received');
+        });
+      next();
+    });
   });
 
-  it('allows a user to fill in a request form', () => {
-    // browser
-    //   .fill('from', '2018-01-01')
-    //   .fill('until', '2018-02-01')
-    //   .pressButton('Submit request')
-    //   .then(() => {
-    //     assert.ok(browser.success);
-    //   });
-    expect(browser.html()).to.include('Booking request for Lolhost mansions received');
+  it('Doesn\'t allow booking outside the available dates', (next) => {
+    browser.visit('/properties/request/new?id=2', () => {
+      browser
+        .fill('from', '2018-06-01')
+        .fill('until', '2018-06-14')
+        .pressButton('Submit request')
+        .then(() => {
+          expect(browser.html()).to.include('Lohost mansions is not available on the requested dates');
+        });
+      next();
+    });
   });
 });
 

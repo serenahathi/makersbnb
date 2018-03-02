@@ -46,6 +46,7 @@ app.get('/properties/request/new', (req, res) => {
 
 app.post('/properties/request', (req, res) => {
   const request = req.body;
+  console.log(request);
   res.render('properties/request.ejs', {
     request,
   });
