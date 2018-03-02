@@ -12,12 +12,29 @@ before((done) => {
   browser.visit('/', done);
 });
 
-describe('it should request a property', () => {
+describe('it should show the request page a property', () => {
   before((done) => {
     browser.pressButton('#property-2', done);
   });
 
   it('it allows the user to request a property', () => {
-    expect(browser.html()).to.include('Thank you for requesting Lolhost mansions');
+    expect(browser.html()).to.include('Make a request for Lolhost mansions');
+  });
+});
+
+
+describe('request form page', () => {
+  before((done) => {
+    browser.visit('/properties/request?id=2', done);
+  });
+
+  it('allows a user to fill in a request form', () => {
+    browser
+      .fill('from', '2018-01-01')
+      .fill('until', '2018-02-01')
+      .pressButton('Submit request')
+      .then(() => {
+        assert.ok(browser.success);
+      });
   });
 });
