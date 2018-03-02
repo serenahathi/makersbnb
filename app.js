@@ -46,11 +46,17 @@ app.get('/properties/request/new', (req, res) => {
 
 app.post('/properties/request', (req, res) => {
   const request = req.body;
-  console.log(request);
-  res.render('properties/request.ejs', {
-    request,
-  });
+  if (request.from >= request.propFrom && request.from <= request.propUntil) {
+    res.render('properties/request.ejs', {
+      request,
+    });
+  } else {
+    res.render('properties/unavailable.ejs', {
+      request,
+    });
+  }
 });
+
 
 module.exports = app;
 
